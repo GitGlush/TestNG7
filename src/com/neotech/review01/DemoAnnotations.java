@@ -4,11 +4,11 @@ import org.testng.annotations.*;
 
 public class DemoAnnotations {
 	
-	@Test
+	@Test (groups= {"smoke","regression"})
 	public void test1() {System.out.println("review test 1");}
 	
 	
-	@Test
+	@Test(groups={"regression"})
 	public void test2() {System.out.println("review test 2");}
 	
 	@BeforeMethod

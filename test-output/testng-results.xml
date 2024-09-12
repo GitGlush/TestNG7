@@ -1,51 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="4" passed="3" failed="0" skipped="0">
+<testng-results ignored="6" total="9" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-12T00:34:39 AST" name="Suite Review01" finished-at="2024-09-12T00:34:39 AST" duration-ms="80">
+  <suite started-at="2024-09-12T21:54:54 AST" name="Regression Suite" finished-at="2024-09-12T21:54:54 AST" duration-ms="62">
     <groups>
+      <group name="regression">
+        <method signature="DemoAnnotations.test1()[pri:0, instance:com.neotech.review01.DemoAnnotations@2b71e916]" name="test1" class="com.neotech.review01.DemoAnnotations"/>
+        <method signature="DemoAnnotations.test2()[pri:0, instance:com.neotech.review01.DemoAnnotations@2b71e916]" name="test2" class="com.neotech.review01.DemoAnnotations"/>
+        <method signature="TestParameters.testA()[pri:4, instance:com.neotech.review01.TestParameters@6c6cb480]" name="testA" class="com.neotech.review01.TestParameters"/>
+      </group> <!-- regression -->
+      <group name="smoke">
+        <method signature="DemoAnnotations.test1()[pri:0, instance:com.neotech.review01.DemoAnnotations@2b71e916]" name="test1" class="com.neotech.review01.DemoAnnotations"/>
+      </group> <!-- smoke -->
     </groups>
-    <test started-at="2024-09-12T00:34:39 AST" name="Test Review01" finished-at="2024-09-12T00:34:39 AST" duration-ms="80">
+    <test started-at="2024-09-12T21:54:54 AST" name="Regression Test" finished-at="2024-09-12T21:54:54 AST" duration-ms="62">
       <class name="com.neotech.review01.DemoAnnotations">
-        <test-method is-config="true" signature="beforeT()[pri:0, instance:com.neotech.review01.DemoAnnotations@776aec5c]" started-at="2024-09-12T00:34:39 AST" name="beforeT" finished-at="2024-09-12T00:34:39 AST" duration-ms="7" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeT -->
-        <test-method is-config="true" signature="beforeM()[pri:0, instance:com.neotech.review01.DemoAnnotations@776aec5c]" started-at="2024-09-12T00:34:39 AST" name="beforeM" finished-at="2024-09-12T00:34:39 AST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeM -->
-        <test-method signature="test1()[pri:0, instance:com.neotech.review01.DemoAnnotations@776aec5c]" started-at="2024-09-12T00:34:39 AST" name="test1" finished-at="2024-09-12T00:34:39 AST" duration-ms="13" status="PASS">
+        <test-method signature="test1()[pri:0, instance:com.neotech.review01.DemoAnnotations@2b71e916]" started-at="2024-09-12T21:54:54 AST" name="test1" finished-at="2024-09-12T21:54:54 AST" duration-ms="10" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->
-        <test-method is-config="true" signature="afterM()[pri:0, instance:com.neotech.review01.DemoAnnotations@776aec5c]" started-at="2024-09-12T00:34:39 AST" name="afterM" finished-at="2024-09-12T00:34:39 AST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterM -->
-        <test-method signature="test2()[pri:0, instance:com.neotech.review01.DemoAnnotations@776aec5c]" started-at="2024-09-12T00:34:39 AST" name="test2" finished-at="2024-09-12T00:34:39 AST" duration-ms="1" status="PASS">
+        <test-method signature="test2()[pri:0, instance:com.neotech.review01.DemoAnnotations@2b71e916]" started-at="2024-09-12T21:54:54 AST" name="test2" finished-at="2024-09-12T21:54:54 AST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test2 -->
-        <test-method is-config="true" signature="beforeM()[pri:0, instance:com.neotech.review01.DemoAnnotations@776aec5c]" started-at="2024-09-12T00:34:39 AST" name="beforeM" finished-at="2024-09-12T00:34:39 AST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeM -->
-        <test-method is-config="true" signature="afterM()[pri:0, instance:com.neotech.review01.DemoAnnotations@776aec5c]" started-at="2024-09-12T00:34:39 AST" name="afterM" finished-at="2024-09-12T00:34:39 AST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterM -->
-        <test-method is-config="true" signature="afterT()[pri:0, instance:com.neotech.review01.DemoAnnotations@776aec5c]" started-at="2024-09-12T00:34:39 AST" name="afterT" finished-at="2024-09-12T00:34:39 AST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterT -->
       </class> <!-- com.neotech.review01.DemoAnnotations -->
       <class name="com.neotech.review01.TestParameters">
-        <test-method signature="testA()[pri:4, instance:com.neotech.review01.TestParameters@206a70ef]" started-at="2024-09-12T00:34:39 AST" name="testA" finished-at="2024-09-12T00:34:39 AST" duration-ms="2" status="PASS">
+        <test-method signature="testA()[pri:4, instance:com.neotech.review01.TestParameters@6c6cb480]" started-at="2024-09-12T21:54:54 AST" name="testA" finished-at="2024-09-12T21:54:54 AST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testA -->
       </class> <!-- com.neotech.review01.TestParameters -->
-    </test> <!-- Test Review01 -->
-  </suite> <!-- Suite Review01 -->
+    </test> <!-- Regression Test -->
+  </suite> <!-- Regression Suite -->
 </testng-results>
