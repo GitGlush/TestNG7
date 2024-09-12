@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite Review01">
+  <test thread-count="5" name="Test Review01">
+    <packages>
+      <package name="com.neotech.review01"/>
+    </packages>
+  </test> 
+</suite> 

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="IncludeExcludeSuite">
+  <test thread-count="5" name="IncludeExcludeTest">
+    <!-- We want to execute everything in package Lesson01 except the TitleAndLogoValidation class-->
+    <!--First way: I can only list the wanted classes here-->
+   
+    <classes>
+		<class name="com.neotech.lesson01.TestNGDemo"></class>
+		<class name="com.neotech.lesson01.TestNGAnnotations"></class>
+		<class name="com.neotech.lesson01.testNGMoreAnnotations"></class>
+		<class name="com.neotech.lesson02.PriorityDemo"></class>
+	</classes>
+	 <!--Second way: exclude all the methods of the unwanted class-->
+	 <packages>
+		<package name="com.neotech.lesson01"></package>
+	 </packages>
+	 <classes>
+		<class name="com.neotech.lesson01.TitleAndLogoValidation">
+			<!-- .* means all the methods -->
+			<methods>
+				<exclude name=".*"></exclude>
+			</methods>
+		</class>
+	 </classes>
+  </test> <!-- IncludeExcludeTest -->
+</suite> <!-- IncludeExcludeSuite -->
